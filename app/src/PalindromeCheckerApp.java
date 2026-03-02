@@ -1,8 +1,9 @@
-//version 1.0
+//version 2.0
 //author Sreejita
-//useCae 1: Welcome Page
+//useCae 2:
 public class PalindromeCheckerApp {
     public static void main(String[] args) {
         System.out.println("Welcome to Palindrome Checker App Management System");
+        System.out.println("Modify this logic to usecase 2 ");
     }
 }
