@@ -1,9 +1,23 @@
-//version 2.0
-//author Sreejita
-//useCae 2:
+import java.util.*;
 public class PalindromeCheckerApp {
     public static void main(String[] args) {
-        System.out.println("Welcome to Palindrome Checker App Management System");
-        System.out.println("Modify this logic to usecase 2 ");
-    }
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter a string: ");
+            String original = sc.nextLine();
+
+            String reversed = "";
+
+            for (int i = original.length() - 1; i >= 0; i--) {
+                reversed = reversed + original.charAt(i);
+            }
+
+            if (original.equals(reversed)) {
+                System.out.println("The string is a palindrome.");
+            } else {
+                System.out.println("The string is not a palindrome.");
+            }
+
+            sc.close();
+        }
 }
+
